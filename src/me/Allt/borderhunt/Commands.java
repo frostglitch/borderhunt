@@ -19,7 +19,7 @@ public class Commands implements CommandExecutor
 		    
 		    Player player = (Player)sender;
 		    
-		    if(cmd.getName().equalsIgnoreCase("testborder"))
+		    if(cmd.getName().equalsIgnoreCase("borderhunt"))
 		    {
 			      if(args.length < 1 && args.length > 3)
 			      {
