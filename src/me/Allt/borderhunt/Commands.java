@@ -1,5 +1,6 @@
 package me.Allt.borderhunt;
 
+import org.bukkit.WorldBorder;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -26,7 +27,11 @@ public class Commands implements CommandExecutor
 					return true;
 			      }
 			      
-			      player.sendMessage("§6BOOM!!");
+			      
+			      player.sendMessage("§6Border increased by 10.");
+			      
+			      WorldBorder border = player.getWorld().getWorldBorder();
+			      border.setSize(border.getSize() + 10);
 		    }
 		    
 		    return true;
