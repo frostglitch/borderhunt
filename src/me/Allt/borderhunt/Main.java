@@ -13,7 +13,6 @@ public class Main extends JavaPlugin
 	  @Override
 	  public void onDisable()
 	  {
-		    //This is only visible on feature branch!!!
-		    //No longer!!!
+
 	  }
 }
