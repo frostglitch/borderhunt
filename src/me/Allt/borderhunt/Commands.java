@@ -19,19 +19,21 @@ public class Commands implements CommandExecutor
 		    
 		    Player player = (Player)sender;
 		    
-		    if(cmd.getName().equalsIgnoreCase("testborder"))
+		    if(cmd.getName().equalsIgnoreCase("borderhunt"))
 		    {
-			      if(args.length != 0)
+			      if(args.length < 1 && args.length > 3)
 			      {
 					player.sendMessage("§4Incorrect command usage.");
 					return true;
 			      }
 			      
-			      
-			      player.sendMessage("§6§lBorder increased by 10.");
-			      
-			      WorldBorder border = player.getWorld().getWorldBorder();
-			      border.setSize(border.getSize() + 10);
+			      if(args[1].equals("start"))
+			      {
+			    	  player.sendMessage("§6§lBorder increased by 10.");
+				      
+				      WorldBorder border = player.getWorld().getWorldBorder();
+				      border.setSize(border.getSize() + 10);
+			      }
 		    }
 		    
 		    return true;

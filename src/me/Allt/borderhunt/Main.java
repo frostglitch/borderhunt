@@ -7,7 +7,7 @@ public class Main extends JavaPlugin
 	  @Override
 	  public void onEnable()
 	  {
-		  getCommand("testborder").setExecutor(new Commands());
+		  getCommand("borderhunt").setExecutor(new Commands());
 	  }
 	  
 	  @Override

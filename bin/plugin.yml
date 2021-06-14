@@ -4,4 +4,4 @@ author: Allt
 main: me.Allt.borderhunt.Main
 
 commands:
-  testborder:
+  borderhunt:
