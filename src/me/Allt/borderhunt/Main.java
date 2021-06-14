@@ -14,5 +14,6 @@ public class Main extends JavaPlugin
 	  public void onDisable()
 	  {
 		    //This is only visible on feature branch!!!
+		    //No longer!!!
 	  }
 }
