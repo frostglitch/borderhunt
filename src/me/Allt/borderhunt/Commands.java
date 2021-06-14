@@ -21,7 +21,7 @@ public class Commands implements CommandExecutor
 		    
 		    if(cmd.getName().equalsIgnoreCase("borderhunt"))
 		    {
-			      if(args.length < 1 && args.length > 3)
+			      if(args.length < 1 || args.length > 2)
 			      {
 					player.sendMessage("§4Incorrect command usage.");
 					return true;
