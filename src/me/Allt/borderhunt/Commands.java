@@ -28,7 +28,7 @@ public class Commands implements CommandExecutor
 			      }
 			      
 			      
-			      player.sendMessage("§6Border increased by 10.");
+			      player.sendMessage("§6§lBorder increased by 10.");
 			      
 			      WorldBorder border = player.getWorld().getWorldBorder();
 			      border.setSize(border.getSize() + 10);
