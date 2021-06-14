@@ -1,0 +1,7 @@
+name: borderhunt
+version: 1.0
+author: Allt
+main: me.Allt.borderhunt.Main
+
+commands:
+  testborder:
