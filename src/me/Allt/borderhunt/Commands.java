@@ -185,9 +185,18 @@ public class Commands implements CommandExecutor
 			    	  {
 			    		  //borderhunt initial 50
 			    		  
-			    		  //Get int value from the argument from the command
-			    		  int value = Integer.parseInt(args[1]);
-			    		  initial = value;			    		  
+			    		  try 
+			    		  {
+			    			  //Get int value from the argument from the command
+				    		  int value = Integer.parseInt(args[1]);
+				    		  time = value;
+						  } 
+			    		  catch (NumberFormatException e) 
+			    		  {
+			    			  //The argument is not a number!
+			    			  player.sendMessage("§4Incorrect input! Only integers are allowed");
+			    			  return true;
+						  }	    		  
 			    		  
 			    		  player.sendMessage("§6Initial border size changed to: §2§l" + args[1]);
 			    	  }
