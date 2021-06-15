@@ -16,6 +16,6 @@ public class Main extends JavaPlugin
 	  @Override
 	  public void onDisable()
 	  {
-		  //Just a little test
+		  
 	  }
 }
