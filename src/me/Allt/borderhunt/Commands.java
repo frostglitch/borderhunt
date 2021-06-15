@@ -9,6 +9,8 @@ import org.bukkit.entity.Player;
 
 public class Commands implements CommandExecutor
 {
+	//BORDERHUNT BORDERHUNT
+	
 	  //Seconds to wait before next increment
 	  private int time = 10;
 	  //How much blocks to increment
