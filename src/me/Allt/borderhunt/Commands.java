@@ -48,7 +48,7 @@ public class Commands implements CommandExecutor
 		    	  //If we have 0 arguments (just /borderhunt) or more than 2 (/borderhunt initial 20 30)
 			      if(args.length == 0 || args.length > 2)
 			      {
-					player.sendMessage("§4Incorrect command usage.");
+					player.sendMessage("ï¿½4Incorrect command usage.");
 					return true;
 			      }
 			      
@@ -80,11 +80,11 @@ public class Commands implements CommandExecutor
 			    			  borderTask = new BorderTask(main, increment);   
 						      borderTask.runTaskTimer(main, 0, time * 20); //time is multiplied by 20 because the function takes ticks instead of seconds
 						      
-						      player.sendMessage("§6§lBorderhunt START!");
+						      player.sendMessage("ï¿½6ï¿½lBorderhunt START!");
 			    		  }
 			    		  else
 			    		  {
-			    			  player.sendMessage("§4Borderhunt already running. Use §l/borderhunt stop " + "§4to stop the border.");
+			    			  player.sendMessage("ï¿½4Borderhunt already running. Use ï¿½l/borderhunt stop " + "ï¿½4to stop the border.");
 			    		  }
 			    	  }
 			    	  else if(args[0].equals("stop"))
@@ -93,7 +93,7 @@ public class Commands implements CommandExecutor
 			    		  
 			    		  if(borderTask == null)
 			    		  {
-			    			  player.sendMessage("§4Borderhunt is not running. Use §l/borderhunt start " + "§4to start the border.");
+			    			  player.sendMessage("ï¿½4Borderhunt is not running. Use ï¿½l/borderhunt start " + "ï¿½4to start the border.");
 			    		  }
 			    		  else
 			    		  {
@@ -101,7 +101,7 @@ public class Commands implements CommandExecutor
 			    			  borderTask.cancel();
 			    			  borderTask = null;
 			    			  
-			    			  player.sendMessage("§6§lBorderhunt STOP!");
+			    			  player.sendMessage("ï¿½6ï¿½lBorderhunt STOP!");
 			    		  }
 			    	  }
 			    	  else if(args[0].equals("pause"))
@@ -110,7 +110,7 @@ public class Commands implements CommandExecutor
 			    		  
 			    		  //Stop the task, but the variable stays
 		    			  borderTask.cancel();
-		    			  player.sendMessage("§6§lBorderhunt PAUSED");
+		    			  player.sendMessage("ï¿½6ï¿½lBorderhunt PAUSED");
 			    	  }
 			    	  else if(args[0].equals("resume"))
 			    	  {
@@ -119,11 +119,11 @@ public class Commands implements CommandExecutor
 			    		  //Start the task
 			    		  borderTask = new BorderTask(main, increment);   
 			    		  borderTask.runTaskTimer(main, 0, time * 20);
-		    			  player.sendMessage("§6§lBorderhunt RESUMED");
+		    			  player.sendMessage("ï¿½6ï¿½lBorderhunt RESUMED");
 			    	  }
 			    	  else 
 			    	  {
-			    		  player.sendMessage("§4Incorrect command usage.");
+			    		  player.sendMessage("ï¿½4Incorrect command usage.");
 			    	  }
 			      }
 
@@ -142,7 +142,7 @@ public class Commands implements CommandExecutor
 			    		  catch (NumberFormatException e) 
 			    		  {
 			    			  //The argument is not a number!
-			    			  player.sendMessage("§4Incorrect input! Only integers are allowed");
+			    			  player.sendMessage("ï¿½4Incorrect input! Only integers are allowed");
 			    			  return true;
 						  }
 			    		  
@@ -154,7 +154,7 @@ public class Commands implements CommandExecutor
 						      borderTask.runTaskTimer(main, 0, time * 20);
 			    		  }
 			    		  
-			    		  player.sendMessage("§6Time changed to: §2§l" + args[1] + " seconds");
+			    		  player.sendMessage("ï¿½6Time changed to: ï¿½2ï¿½l" + args[1] + " seconds");
 			    	  }
 			    	  else if (args[0].equals("increment"))
 			    	  {
@@ -169,7 +169,7 @@ public class Commands implements CommandExecutor
 			    		  catch (NumberFormatException e) 
 			    		  {
 			    			  //The argument is not a number!
-			    			  player.sendMessage("§4Incorrect input! Only integers are allowed");
+			    			  player.sendMessage("ï¿½4Incorrect input! Only integers are allowed");
 			    			  return true;
 						  }
 			    		  
@@ -181,7 +181,7 @@ public class Commands implements CommandExecutor
 						      borderTask.runTaskTimer(main, 0, time * 20);
 			    		  }
 			    		  
-			    		  player.sendMessage("§6Increment changed to: §2§l" + args[1]);
+			    		  player.sendMessage("ï¿½6Increment changed to: ï¿½2ï¿½l" + args[1]);
 			    	  }
 			    	  else if (args[0].equals("initial"))
 			    	  {
@@ -196,15 +196,15 @@ public class Commands implements CommandExecutor
 			    		  catch (NumberFormatException e) 
 			    		  {
 			    			  //The argument is not a number!
-			    			  player.sendMessage("§4Incorrect input! Only integers are allowed");
+			    			  player.sendMessage("ï¿½4Incorrect input! Only integers are allowed");
 			    			  return true;
 						  }	    		  
 			    		  
-			    		  player.sendMessage("§6Initial border size changed to: §2§l" + args[1]);
+			    		  player.sendMessage("ï¿½6Initial border size changed to: ï¿½2ï¿½l" + args[1]);
 			    	  }
 			    	  else 
 			    	  {
-			    		  player.sendMessage("§4Incorrect command usage.");
+			    		  player.sendMessage("ï¿½4Incorrect command usage.");
 			    	  }
 			    	  
 			    	  return true;
