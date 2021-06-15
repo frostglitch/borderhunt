@@ -8,6 +8,7 @@ public class Main extends JavaPlugin
 	  public void onEnable()
 	  {
 		  getCommand("borderhunt").setExecutor(new Commands());
+		  getCommand("borderhunt").setTabCompleter(new CommandCompleter());
 	  }
 	  
 	  @Override
