@@ -8,6 +8,8 @@ This plugin can be used on its own, but it was created to be used in a minecraft
 
 Game version: **1.16**
 
+Spigot page of the plugin can be found [here].
+
 ## Usage
 
 `/borderhunt <option> (value)`
@@ -46,3 +48,4 @@ Pausing, changing a value and resuming:
 ```
 
 [player tracker]: https://www.spigotmc.org/resources/compass-tracker-nether-compatible.87102/
+[here]: https://www.spigotmc.org/resources/borderhunt.93341/
