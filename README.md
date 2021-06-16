@@ -49,3 +49,6 @@ Pausing, changing a value and resuming:
 
 [player tracker]: https://www.spigotmc.org/resources/compass-tracker-nether-compatible.87102/
 [here]: https://www.spigotmc.org/resources/borderhunt.93341/
+
+Licensed under the [MIT License](LICENSE).
+
